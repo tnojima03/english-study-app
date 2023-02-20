@@ -1,0 +1,30 @@
+{% extends 'mysite/base.html' %}
+{% load func_test %}
+{% load text_to_speech %}
+{% load my_tools %}
+
+{% block content %}
+<div class="container">
+    {% load static %}
+    <h1>
+        単語
+    </h1>
+
+    <a href="{% url 'word_app:create' %}" class="btn btn-info mb-2" tabindex="-1" role="button" aria-disabled="true">新規データ作成</a>
+
+    {% for item in object_list reversed %}
+    <div class="alert alert-primary" role="alert">
+
+        <p>{{item.title}}</p>
+        <p>{{ item.memo | linebreaksbr }}</p>
+
+
+        <a href="{% url 'word_app:update' item.pk %}" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">編集</a>
+        <a href="{% url 'word_app:delete' item.pk %}" class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true">削除</a>
+        <a href="{% url 'word_app:detail' item.pk %}" class="btn btn-success" tabindex="-1" role="button" aria-disabled="true">詳細</a>
+
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

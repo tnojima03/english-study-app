@@ -1,0 +1,11 @@
+{% extends 'mysite/base.html' %}
+{% load my_tools %}
+{% block content %}
+
+
+
+<form action="" method="POST">
+{% csrf_token %}
+<input type="submit" value="delete"> 
+</form>
+{% endblock content %}

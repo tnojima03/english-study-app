@@ -1,0 +1,10 @@
+{% extends 'mysite/base.html' %}
+{% block content %}
+<form action="" method="POST">
+{% csrf_token %}
+{{ form.title }}
+{{ form.memo }}
+
+<input type="submit" value="update">    
+</form>
+{% endblock content %}

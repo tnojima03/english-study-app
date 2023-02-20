@@ -1,0 +1,43 @@
+{% extends 'mysite/base.html' %}
+
+{% block content %}
+
+
+{{article.title}}
+
+<main class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h3 class="pb-4 font-italic border-bottom">
+                Django Lesson
+            </h3>
+            {% for obj in articles %}
+            <div class="blog-post">
+                <h2 class="blog-post-title">{{obj.title}}</h2>
+                <p class="blog-post-meta">{{obje.created_at }} by 
+                    <a href="#">{{obj.author}}</a>
+                </p>
+                <p>
+                    {{obje.text}}
+                </p>
+            </div>
+            {% endfor %}
+            <nav class="blog-pagination">
+                <a class="btn btn-outline-primary" href="#">古い記事</a>
+                <a class="btn btn-outline-primary disabled" href="#">新しい記事</a>
+            </nav>
+        </div>
+
+        
+        {% include 'mysite/snippets/sidebar.html' %}
+
+    </div>
+</main>
+
+<footer class="border-top py-5 text-center bg-light mt-4">
+    <p>
+        <a href="/">トップに戻る</a>
+    </p>
+</footer>
+
+{% endblock %}
