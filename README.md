@@ -5,18 +5,13 @@ This application allows users to save text and the audio of the pronunciation of
 
 ## Discription
 ### Sample video
-<<<<<<< HEAD
-In this video, you can see how to register an expression, view it, and edit it. The detail of the usage will be explained below.
-=======
 In this video, you can see how to register an expression, view it, and edit it. The detail of the usage will be explained below.<br>
 https://user-images.githubusercontent.com/70420983/220114932-6a0a6c22-ba87-4890-8cf9-5eb8b1f8f840.mp4
 
->>>>>>> feb2d5f2c0df83576ecd04911c68c5c729a76601
 
 ### How to use
 #### How to register expressions
 You can register a new expression from the "新規データ作成" button. <br>
-<<<<<<< HEAD
 <img src="https://github.com/tnojima03/images_for_readme/blob/master/eapp/register1.png" width="320px"><br>
 Pressing this button transitions the page and allows the user to register a new expression and information about it.<br>
 <img src="https://github.com/tnojima03/images_for_readme/blob/master/eapp/register2.png" width="320px">
@@ -47,5 +42,5 @@ You can edit an expression and the information about it from "編集" button.<br
 <img src="https://github.com/tnojima03/images_for_readme/blob/master/eapp/edit1.png" width="640px">
 The information can be modified on the destination page.<br>
 <img src="https://github.com/tnojima03/images_for_readme/blob/master/eapp/edit2.png" width="640px">
->>>>>>> feb2d5f2c0df83576ecd04911c68c5c729a76601
+
 
